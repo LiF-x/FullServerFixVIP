@@ -1,5 +1,4 @@
-# FullServerFixVIPV1.0.1
-
+# FullServerFixVIPV
 ### Installation Instructions
 
 To Install this mod, ensure you have the LiFx FrameWork installed [Download here](https://lifxmod.com/)
