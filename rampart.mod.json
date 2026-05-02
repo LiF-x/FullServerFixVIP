@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "FullServerFixVIP",
+  "name": "FullServerFixVIP",
+  "version": "1.6.2",
+  "description": "Disconnects an AFK player to make room for a VIP when the server is full.",
+  "authors": ["Christophe Roblin"],
+  "loadOrderHint": 100,
+  "files": {
+    "overlay": [
+      { "src": "mod.cs", "dest": "mods/FullServerFixVIP/mod.cs" }
+    ],
+    "dataPatches": []
+  }
+}
