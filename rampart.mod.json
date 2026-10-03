@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "id": "FullServerFixVIP",
-  "name": "Full Server Fix VIP",
+  "name": "FullServerFixVIP",
   "version": "1.6.2",
-  "description": "VIP variant of Full Server Fix: when the server is full and a joining account carries the VIPFlag, an AFK player is ejected to free a slot instead of the joining client being dropped.",
+  "description": "Disconnects an AFK player to make room for a VIP when the server is full.",
   "authors": ["Christophe Roblin"],
   "source": { "repo": "LiF-x/FullServerFixVIP", "commit": "0a12f54a85d02da2d358cf2e68d8487304fd1588" },
   "baseline": { "gameBuild": "sha256:d47ef6156423f1226b6d07a1f31f81d3aa94bc460cc1ac76bcf7d7ef9c305d4a", "steamBuildId": "11261643" },
@@ -11,7 +11,7 @@
   "distribution": "hostable",
   "dependencies": ["LiF-x/ServerAutoloader"],
   "loadOrderHint": 200,
-  "loadOrderNote": "Supersedes LiF-x/FullServerFix and should not be installed alongside it: FullServerFix drops a full-server connection at onPreConnectRequest, which pre-empts this mod's onPostConnectRoutine idler-eviction. Loads at 200 because it inspects other connected clients' state and alters the server-full behaviour.",
+  "loadOrderNote": "Supersedes LiF-x/FullServerFix and should not be installed alongside it: FullServerFix drops a full-server connection at onPreConnectRequest, which pre-empts this mod's onPostConnectRoutine idler eviction. Set to 200 because it inspects other connected clients' state and alters the server-full behaviour.",
   "files": {
     "overlay": [
       { "src": "mod.cs", "dest": "mods/FullServerFixVIP/mod.cs" }
